@@ -4,15 +4,15 @@ public class Main {
         Bibliotheque biblio = new Bibliotheque();
 
      
-        Document doc1 = new Document(101, "Le Petit Prince", "Antoine de Saint-Exupéry");
-        Document doc2 = new Document(102, "L'Étranger", "Albert Camus");
+        Document doc1 = new Document(101, "Germinal", "Émile Zola");
+        Document doc2 = new Document(102, "Les bouts de bois de Dieu", "Sembène Ousmane");
 
         biblio.ajouterDocument(doc1);
         biblio.ajouterDocument(doc2);
 
        
-        Adherent adh1 = new Adherent(1, "Jean Dupont", "jean.dupont@email.com");
-        Adherent adh2 = new Adherent(2, "Alice Martin", "alice.martin@email.com");
+        Adherent adh1 = new Adherent(1, "Trevor TOUGMA", "trevor.tougma@gmail.com");
+        Adherent adh2 = new Adherent(2, "Lionel KABORE", "lionel.kabore@gmail.com");
 
         biblio.ajouterAdherent(adh1);
         biblio.ajouterAdherent(adh2);
@@ -22,14 +22,13 @@ public class Main {
 
        
         System.out.println("\n--- OPÉRATIONS ---");
-        biblio.emprunterDocument(101, 1); // Jean emprunte Le Petit Prince
-        biblio.emprunterDocument(101, 2); // Alice tente d'emprunter le même document (doit échouer)
-
+        biblio.emprunterDocument(101, 1); 
+        biblio.emprunterDocument(101, 2); 
         
         biblio.afficherCatalogue();
 
       
-        biblio.retournerDocument(101); // Retour du livre
+        biblio.retournerDocument(101); 
 
         biblio.afficherCatalogue();
     }
