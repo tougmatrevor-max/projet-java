@@ -5,7 +5,6 @@ public Bibliotheque() {
     this.listeAdherents = new ArrayList<>();
 }
 
-//Enregistrement des documents et adhérents
 
 public void ajouterDocument(Document doc) {
     listeDocuments.add(doc);
@@ -17,7 +16,6 @@ public void ajouterAdherent(Adherent adherent) {
     System.out.println("Adhérent enregistré : " + adherent.getNom());
 }
 
-// Recherche
 
 public Document chercherDocument(int numero) {
     for (Document d : listeDocuments) {
@@ -37,7 +35,6 @@ public Adherent chercherAdherent(int identifiant) {
     return null;
 }
 
-// Gestion du Prêt et du Retour
 
 public boolean emprunterDocument(int numDocument, int idAdherent) {
     Document doc = chercherDocument(numDocument);
@@ -80,7 +77,6 @@ public boolean retournerDocument(int numDocument) {
     }
 }
 
-// Affichage
 
 public void afficherCatalogue() {
     System.out.println("\n--- CATALOGUE DE LA BIBLIOTHÈQUE ---");
