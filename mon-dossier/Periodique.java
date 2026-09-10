@@ -23,5 +23,3 @@ public class Periodique extends Document {
         return super.toString() + " - Périodique (N° parution : " + numeroParution + ")";
     }
 }
-    }
-}
