@@ -50,5 +50,3 @@ public abstract class Document{
      return "N°" + numero + " - " + titre + " (" + auteurPrincipal + ") [Disponible : " + disponible + "]";
   }
 }
-}
-}
