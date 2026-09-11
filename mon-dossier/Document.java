@@ -1,9 +1,10 @@
 public abstract class Document{
   private int numero;
   private String titre;
-  private String auteurPrincipal;
+  private Auteur auteurPrincipal; //Composition
   private boolean disponible;
-  public Document(int numero, String titre, String auteurPrincipal) {
+  
+  public Document(int numero, String titre, Auteur auteurPrincipal) {
      if (numero <= 0) {
          throw new IllegalArgumentException("Le numéro doit être strictement positif.");
      }
