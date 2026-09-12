@@ -1,5 +1,5 @@
 public class Livre extends Document{
-  private int nombrePages;
+  private int nombrePages; // Creation de la classe
 
 public Livre(int numero, String titre, String auteurPrincipal,int nombrePages){
   super(numero,titre,auteurPrincipal);
