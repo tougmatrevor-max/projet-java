@@ -14,13 +14,13 @@ public class Main {
         System.out.println(doc2.toString() + " -> Durée max: " + doc2.dureeMaxPret() + " jours");
 
         System.out.println("\n VÉRIFICATION DES RÈGLES D'EMPRUNT ");
-        System.out.println("Disponibilité initiale doc1 : " + doc1.isDisponible()); // true
+        System.out.println("Disponibilité initiale doc1 : " + doc1.isDisponible()); 
 
         doc1.emprunter();
-        System.out.println("Statut après emprunt doc1 : " + doc1.isDisponible()); // false
+        System.out.println("Statut après emprunt doc1 : " + doc1.isDisponible()); 
 
         doc1.retourner();
-        System.out.println("Statut après retour doc1  : " + doc1.isDisponible()); // true
+        System.out.println("Statut après retour doc1  : " + doc1.isDisponible()); 
 
 
         System.out.println("\n\n PARTIE 2 : TESTS SUR COLLECTION \n");
@@ -29,12 +29,12 @@ public class Main {
         documents.add(new Livre(101, "Introduction à Java", "Lionel", 320));
         documents.add(new Periodique(202, "Science et Technique", "Rédaction", 12));
 
-        System.out.println("--- ESSAI 1 : Sous-type Livre ---");
+        System.out.println(" ESSAI 1 : Sous-type Livre ");
         Document docLivre = documents.get(0);
         System.out.println("Description : " + docLivre.toString());
         System.out.println("Durée max de prêt : " + docLivre.dureeMaxPret() + " jours");
 
-        System.out.println("\n--- ESSAI 2 : Sous-type Périodique ---");
+        System.out.println("\n ESSAI 2 : Sous-type Périodique ");
         Document docPeriodique = documents.get(1);
         System.out.println("Description : " + docPeriodique.toString());
         System.out.println("Durée max de prêt : " + docPeriodique.dureeMaxPret() + " jours");
