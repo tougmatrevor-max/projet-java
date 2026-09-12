@@ -10,8 +10,8 @@ public class Main {
         Document doc2 = new Periodique(202, "Science et Technique", "Rédaction", 12);
 
         System.out.println(" PRÉSENTATION ET DURÉES DE PRÊT ");
-        System.out.println(doc1.toString() + " -> Durée max: " + doc1.dureeMaxPret() + " jours");
-        System.out.println(doc2.toString() + " -> Durée max: " + doc2.dureeMaxPret() + " jours");
+        System.out.println(doc1.toString() + " Durée max: " + doc1.dureeMaxPret() + " jours");
+        System.out.println(doc2.toString() + " Durée max: " + doc2.dureeMaxPret() + " jours");
 
         System.out.println("\n VÉRIFICATION DES RÈGLES D'EMPRUNT ");
         System.out.println("Disponibilité initiale doc1 : " + doc1.isDisponible()); 
@@ -42,7 +42,7 @@ public class Main {
         System.out.println("\n ESSAI 3 : Parcours polymorphe de la liste ");
         for (Document doc : documents) {
             
-            System.out.println(doc.getTitre() + " -> Durée max: " + doc.dureeMaxPret() + " jours");
+            System.out.println(doc.getTitre() + " Durée max: " + doc.dureeMaxPret() + " jours");
             doc.emprunter();
             System.out.println("Statut après emprunt : " + (doc.isDisponible() ? "Libre" : "Emprunté"));
         }
