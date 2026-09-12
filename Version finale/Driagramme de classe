@@ -3,7 +3,7 @@
        +-----------------------------------------------+
        | - numero : int                                |
        | - titre : String                              |
-       | - auteurPrincipal : Auteur                    |
+       | - auteurPrincipal : String                    |
        | - disponible : boolean                        |
        +-----------------------------------------------+
                               ^
