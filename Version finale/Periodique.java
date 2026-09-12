@@ -1,4 +1,3 @@
-// Periodique.java
 public class Periodique extends Document {
     private int numeroParution;
 
