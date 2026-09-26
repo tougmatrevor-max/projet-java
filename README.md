@@ -20,7 +20,9 @@ Répartition du travail et rôles
  Membre , Rôle principal , Tâches effectuées sur GitHub:
 
  KABORE Christian Lionel : Nettoyage et Structure , Restructuration du dépôt, archivage des anciennes versions dans `/archive`, nettoyage du dossier `src/`. 
+ 
  KABRE Marius Edson : Modélisation et Interfaces , Création de l'interface `Empruntable`, création de la classe `Adherent` et association dans `Document`. 
+ 
  TOUGMA Trevor : Scénarios de test et Doc , Écriture des tests dans `Main.java` (double emprunt, retours), validation du polymorphisme, rédaction du `README.md`.
 
   Règles métier implémentées
